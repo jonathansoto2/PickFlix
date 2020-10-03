@@ -1,0 +1,46 @@
+<ion-content>
+	<ion-header [translucent]="true">
+		<ion-toolbar color="dark">
+	  
+		  <ion-title color="primary" >
+			PickFlix
+		  </ion-title>
+		  <ion-button id="signup" slot="start" color="secondary" href="/" ><ion-icon name="chevron-back-outline"></ion-icon>Back</ion-button>
+		  <ion-button id="login" slot="end" color="primary" routerLink="/logout" >Login</ion-button> 
+		</ion-toolbar>
+	  </ion-header>
+
+	<ion-grid>
+		<ion-row>
+			<ion-col>
+				<ion-item color="secondary" lines="none">
+					<ion-input #nameInput placeholder="First Name"></ion-input>
+				</ion-item>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col>
+				<ion-item color="secondary" lines="none">
+					<ion-input #emailInput placeholder="E-mail"></ion-input>
+				</ion-item>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col>
+				<ion-item color="secondary" lines="none">
+					<ion-input #passwordInput placeholder="Password"></ion-input>
+				</ion-item>
+			</ion-col>
+		</ion-row>
+		
+		<ion-row>
+			<ion-col>
+				<ion-button (click)="addUser(nameInput.value, emailInput.value, passwordInput.value)">
+					SIGN UP YO
+				</ion-button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>

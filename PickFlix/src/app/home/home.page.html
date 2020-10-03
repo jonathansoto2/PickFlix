@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+
+    <ion-title color="primary" >
+      PickFlix
+	</ion-title>
+	<ion-button id="signup" slot="start" color="secondary" routerLink="/sign-up" >Signup</ion-button>
+	<ion-button id="login" slot="end" color="primary" >Login</ion-button> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+
+  <div id="container">
+	<!-- <h1>Welcome to PickFlix!</h1>
+	<h2>Picking a movie to watch made easy!</h2>
+	<p color="light">Have you ever struggled to decide on a movie when hanging out with a friend? 
+		Now you both can simultaniously pick movies you like, 
+		and when you both like the same one the application will show your movie match!</p> -->
+    <ion-grid>
+		<ion-row class="ion-justify-content-center">
+			<ion-col size="10">
+				<h1>Welcome to PickFlix!</h1>
+				<ion-icon size="large" name="film-outline"></ion-icon>
+				<h2>Picking a movie to watch made easy!</h2>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col>
+				<p color="light">Have you ever struggled to decide on a movie when hanging out with a friend? 
+					Now you both can simultaniously pick movies you like, 
+					and when you both like the same one the application will show your <span class="span">movie match</span>!</p>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col size="12">
+				<ion-button expand="full">Get Started!</ion-button>
+			</ion-col> 
+		</ion-row>
+	</ion-grid>
+  </div>
+</ion-content>

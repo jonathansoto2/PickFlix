@@ -1,0 +1,7 @@
+{
+  "name": "PickFlix",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
